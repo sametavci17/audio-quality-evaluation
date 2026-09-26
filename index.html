@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Quality Evaluation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">PERSONAL LEARNING PROJECT</p>
+      <h1>Audio Quality Evaluation</h1>
+      <p class="subtitle">
+        A simple evaluation interface for reviewing AI-generated audio.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Evaluation Criteria</h2>
+
+      <label>
+        Clarity
+        <span id="clarityValue">3</span>/5
+      </label>
+      <input id="clarity" type="range" min="1" max="5" value="3">
+
+      <label>
+        Naturalness
+        <span id="naturalnessValue">3</span>/5
+      </label>
+      <input id="naturalness" type="range" min="1" max="5" value="3">
+
+      <label>
+        Background Noise
+        <span id="noiseValue">3</span>/5
+      </label>
+      <input id="noise" type="range" min="1" max="5" value="3">
+
+      <label>
+        Distortion / Artifacts
+        <span id="distortionValue">3</span>/5
+      </label>
+      <input id="distortion" type="range" min="1" max="5" value="3">
+
+      <label>
+        Pronunciation
+        <span id="pronunciationValue">3</span>/5
+      </label>
+      <input id="pronunciation" type="range" min="1" max="5" value="3">
+
+      <label>
+        Overall Quality
+        <span id="overallValue">3</span>/5
+      </label>
+      <input id="overall" type="range" min="1" max="5" value="3">
+
+      <button id="calculate">Calculate Evaluation</button>
+
+      <div id="result" class="result" aria-live="polite">
+        Adjust the criteria and calculate the evaluation.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Evaluator Notes</h2>
+      <textarea id="notes" placeholder="Example: Clear voice, slight background noise, natural pronunciation..."></textarea>
+    </section>
+
+    <footer>
+      Personal learning project — not a professional audio certification tool.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
